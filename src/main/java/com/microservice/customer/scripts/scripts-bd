@@ -1,0 +1,8 @@
+//CUSTOMER-TYPES
+db.customer_types.insertOne(
+   { type: "PERSONAL" }
+)
+
+db.customer_types.insertOne(
+   { type: "EMPRESARIAL" }
+)

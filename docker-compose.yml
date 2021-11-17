@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  customer-service:
+    image: customer-service
+    restart: always
+    container_name: customer-service
+    ports:
+      - '8081:8081'
+    networks:
+      - 'config-network'
+networks:
+  config-network:
+    external: true
